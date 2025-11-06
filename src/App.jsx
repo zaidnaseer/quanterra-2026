@@ -34,9 +34,9 @@ export default function QuanterraWebsite() {
     { role: 'Chief Patron', name: 'Dr. A. Ramakrishna' },
     { role: 'Symposium Chair', name: 'Dr. Arpita Gupta' },
     { role: 'Convenor', name: 'Dr. Sumit Hazra' },
-    { 
-      role: 'Co-Convenors', 
-      name: 'Dr. Sushama Rani Dutta, Mr. Chanda Rajkumar, Mr. Chiranjeevi N, Mrs. P Sree Lakshmi' 
+    {
+      role: 'Co-Convenors',
+      name: 'Dr. Sushama Rani Dutta, Mr. Chanda Rajkumar, Mr. Chiranjeevi N, Mrs. P Sree Lakshmi'
     }
   ];
 
@@ -74,7 +74,7 @@ export default function QuanterraWebsite() {
           backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
           backgroundSize: '40px 40px'
         }}></div>
-        
+
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="inline-block mb-6 px-4 py-2 bg-cyan-500/20 backdrop-blur-sm rounded-full text-cyan-300 text-sm font-semibold">
             Doctoral Colloquium
@@ -108,7 +108,7 @@ export default function QuanterraWebsite() {
             </a>
           </div>
         </div>
-        
+
         <a href="#about" className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-8 h-8 text-cyan-400" />
         </a>
@@ -120,7 +120,7 @@ export default function QuanterraWebsite() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
             About the Symposium
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4 text-cyan-400">Our Vision</h3>
@@ -128,7 +128,7 @@ export default function QuanterraWebsite() {
                 The symposium is organized by an interdisciplinary team of faculty and researchers. Our committee combines expertise in machine learning, and computational mathematics, with extensive experience in hosting academic conferences and active collaborations with leading quantum computing research centers worldwide.
               </p>
             </div>
-            
+
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4 text-cyan-400">For Researchers</h3>
               <p className="text-gray-300 leading-relaxed">
@@ -186,10 +186,10 @@ export default function QuanterraWebsite() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
             Registration Schedule
           </h2>
-          
+
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-cyan-400 to-blue-600 hidden md:block"></div>
-            
+
             {scheduleItems.map((item, index) => (
               <div key={index} className={`relative flex items-center mb-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:pl-12'}`}>
@@ -198,9 +198,9 @@ export default function QuanterraWebsite() {
                     <p className="text-gray-300 text-lg">{item.event}</p>
                   </div>
                 </div>
-                
+
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full border-4 border-slate-900 z-10"></div>
-                
+
                 <div className="w-full md:w-5/12"></div>
               </div>
             ))}
@@ -214,7 +214,7 @@ export default function QuanterraWebsite() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
             Research Tracks
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             {tracks.map((track, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 group">
@@ -233,10 +233,10 @@ export default function QuanterraWebsite() {
       {/* Organizers Section */}
       <section className="py-20 px-4 bg-black/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 pb-2">
             Organizing Committee
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {organizers.map((org, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-md rounded-xl p-8 border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
@@ -244,7 +244,7 @@ export default function QuanterraWebsite() {
                 <div className="text-white text-lg font-medium">{org.name}</div>
               </div>
             ))}
-            
+
             <div className="md:col-span-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-md rounded-xl p-8 border border-cyan-400/20">
               <div className="text-cyan-400 font-semibold mb-2 text-sm uppercase tracking-wide">Student Volunteers</div>
               <div className="text-white text-lg font-medium">Guild Club and FOSS Club</div>
@@ -259,7 +259,7 @@ export default function QuanterraWebsite() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
             Contact Us
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10">
               <h3 className="text-2xl font-bold mb-6 text-cyan-400">Symposium Chair</h3>
@@ -267,32 +267,32 @@ export default function QuanterraWebsite() {
                 <div className="text-xl font-semibold">Dr. Arpita Gupta</div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Mail className="w-5 h-5 text-cyan-400" />
-                  <a href="mailto:arpita.gupta@klh.edu.in" className="hover:text-cyan-400 transition-colors">
+                  <a href="mailto:arpita.gupta@klh.edu.in" className="hover:text-gray-100 transition-colors">
                     arpita.gupta@klh.edu.in
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Phone className="w-5 h-5 text-cyan-400" />
-                  <a href="tel:9407885161" className="hover:text-cyan-400 transition-colors">
+                  <a href="tel:9407885161" className="hover:text-gray-100 transition-colors">
                     9407885161
                   </a>
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10">
               <h3 className="text-2xl font-bold mb-6 text-cyan-400">Convenor</h3>
               <div className="space-y-4">
                 <div className="text-xl font-semibold">Dr. Sumit Hazra</div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Mail className="w-5 h-5 text-cyan-400" />
-                  <a href="mailto:sumit.hazra@klh.edu.in" className="hover:text-cyan-400 transition-colors">
+                  <a href="mailto:sumit.hazra@klh.edu.in" className="hover:text-gray-100 transition-colors">
                     sumit.hazra@klh.edu.in
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <Phone className="w-5 h-5 text-cyan-400" />
-                  <a href="tel:9830770461" className="hover:text-cyan-400 transition-colors">
+                  <a href="tel:9830770461" className="hover:text-gray-100 transition-colors">
                     9830770461
                   </a>
                 </div>
@@ -310,6 +310,9 @@ export default function QuanterraWebsite() {
           </p>
           <p className="text-sm text-gray-500">
             We cordially invite your participation in this scholarly forum!
+          </p>
+          <p className="text-sm text-gray-500">
+            Website Developed by <a href="https://www.linkedin.com/in/zaid-naseer-07267428b/" className="text-gray-400 hover:text-gray-300 transition-colors underline decoration-gray-600">Zaid Naseer</a>
           </p>
         </div>
       </footer>
